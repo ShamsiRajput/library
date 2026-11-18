@@ -2,10 +2,9 @@
   "name": "library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "percel build src/*.html --dist-dir dist --public-url /"
+    "build": "parcel build src/*.html --dist-dir dist --public-url /"
   },
   "keywords": [],
   "author": "",
