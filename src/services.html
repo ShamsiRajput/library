@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Services | Readers' Haven</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .services-page {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .services-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .service-card h2 {
+            color: #245b50;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            line-height: 1.7;
+        }
+
+        @media (max-width: 650px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-page {
+                margin: 20px auto;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="membership.html">Membership</a>
+        <a href="services.html">Digital Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="services-page">
+    <section class="services-heading">
+        <h1>Our Digital Library Services</h1>
+        <p>Explore modern facilities that make learning and reading easier.</p>
+    </section>
+
+    <section class="services-grid">
+
+        <article class="service-card">
+            <h2>Online Catalogue</h2>
+            <p>Search our library collection online and find books by title,
+            author or category.</p>
+            <p><strong>Available:</strong> 24 hours a day.</p>
+            <p><strong>How to use:</strong> Visit our online catalogue and
+            search for your required book.</p>
+        </article>
+
+        <article class="service-card">
+            <h2>E-Books and Digital Resources</h2>
+            <p>Read digital books, educational materials and learning
+            resources from anywhere.</p>
+            <p><strong>Available:</strong> 24/7 for registered members.</p>
+            <p><strong>How to use:</strong> Log in using your library
+            membership and select an available resource.</p>
+        </article>
+
+        <article class="service-card">
+            <h2>Study Room Booking</h2>
+            <p>Students can reserve quiet study rooms for individual
+            learning and group discussions.</p>
+            <p><strong>Timings:</strong> Monday–Saturday, 9 AM–5 PM.</p>
+            <p><strong>How to use:</strong> Contact the library desk
+            and request an available time slot.</p>
+        </article>
+
+        <article class="service-card">
+            <h2>Printing and Scanning</h2>
+            <p>Print assignments, scan documents and make digital copies
+            of educational materials.</p>
+            <p><strong>Timings:</strong> Monday–Saturday, 10 AM–6 PM.</p>
+            <p><strong>How to use:</strong> Bring your document on a USB
+            drive or email it to the library desk.</p>
+        </article>
+
+        <article class="service-card">
+            <h2>Free Wi-Fi</h2>
+            <p>Enjoy internet access inside the library for research,
+            online learning and educational activities.</p>
+            <p><strong>Timings:</strong> During library opening hours.</p>
+            <p><strong>How to use:</strong> Ask the library staff for
+            the Wi-Fi access details.</p>
+        </article>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Readers' Haven Public Library. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
