@@ -1,0 +1,358 @@
+
+/* ==========================================
+   READERS' HAVEN PUBLIC LIBRARY
+   Shared CSS - Collections + Home Page
+   ========================================== */
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #26332e;
+  background: #ffffff;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e7e1d7;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: #173c35;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: #26332e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: #bc9250;
+}
+
+.site-footer {
+  padding: 28px 20px;
+  text-align: center;
+  background: #102c27;
+  color: #ffffff;
+}
+
+/* ==========================================
+   COLLECTIONS PAGE
+   ========================================== */
+
+.collections-hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #173c35;
+  color: #fff;
+}
+
+.collections-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 15px 0;
+}
+
+.collections-hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.collections-hero .eyebrow {
+  color: #e9c78a;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.collections-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 24px;
+}
+
+.book-category {
+  margin-bottom: 65px;
+}
+
+.book-category h2 {
+  font-size: 30px;
+  color: #173c35;
+}
+
+.book-category > p {
+  color: #666;
+  margin: 10px 0 25px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.book-card {
+  background: #f8f5ee;
+  padding: 35px 24px;
+  border: 1px solid #e8e1d5;
+  border-radius: 14px;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-icon {
+  display: block;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.book-card h3 {
+  margin: 0 0 10px;
+  color: #173c35;
+}
+
+.book-card p {
+  color: #666;
+}
+
+/* Collections Responsive */
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collections-hero {
+    padding: 60px 20px;
+  }
+
+  .collections-container {
+    padding: 35px 16px;
+  }
+}
+
+/* ==========================================
+   HOME PAGE
+   ========================================== */
+
+.home-hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  padding: 90px 8%;
+  color: #fff;
+  background:
+    linear-gradient(
+      110deg,
+      #102c27 5%,
+      #173c35e8 65%,
+      #173c35c9
+    ),
+    #173c35;
+}
+
+.home-hero-content {
+  max-width: 760px;
+}
+
+.home-eyebrow {
+  color: #bc9250;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.home-hero .home-eyebrow {
+  color: #f1c984;
+}
+
+.home-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.12;
+  margin: 20px 0;
+}
+
+.home-hero p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.home-btn,
+.home-btn-outline {
+  display: inline-block;
+  padding: 15px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.home-btn {
+  background: #e5bb76;
+  color: #173c35;
+}
+
+.home-btn-outline {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.home-section-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.home-about,
+.home-explore,
+.home-visit {
+  padding: 85px 8%;
+}
+
+.home-about {
+  text-align: center;
+  background: #faf8f3;
+}
+
+.home-about .home-section-inner {
+  max-width: 800px;
+}
+
+.home-section-inner h2 {
+  color: #173c35;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin: 15px 0 25px;
+}
+
+.home-section-inner p {
+  line-height: 1.8;
+}
+
+.home-explore {
+  background: #fff;
+}
+
+.home-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.home-feature-card {
+  padding: 30px 22px;
+  border-radius: 12px;
+  background: #f8f5ee;
+  border: 1px solid #e7dfd2;
+}
+
+.home-feature-card span {
+  font-size: 36px;
+}
+
+.home-feature-card h3 {
+  color: #173c35;
+}
+
+.home-feature-card a {
+  color: #17614f;
+  font-weight: 700;
+}
+
+.home-visit {
+  background: #f4f0e7;
+}
+
+.home-visit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.home-visit-grid > div {
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.home-visit-grid h3 {
+  color: #173c35;
+}
+
+/* ==========================================
+   RESPONSIVE STYLES
+   ========================================== */
+
+@media (max-width: 900px) {
+  .home-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .home-hero {
+    min-height: 65vh;
+    padding: 70px 6%;
+  }
+
+  .home-hero p {
+    font-size: 16px;
+  }
+
+  .home-about,
+  .home-explore,
+  .home-visit {
+    padding: 55px 6%;
+  }
+
+  .home-feature-grid,
+  .home-visit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-actions a {
+    width: 100%;
+    text-align: center;
+  }
+}
